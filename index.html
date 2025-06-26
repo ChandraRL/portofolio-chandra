@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Chandra</title>
-  <link rel="icon" href="images/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Chandra Prasetya Raga Lawa</title>
+  <link rel="icon" href="Images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <!-- Sticky Buttons -->
-  <button id="darkModeToggle" title="Ganti Tema">🌙</button>
-  <button id="hamburger" title="Menu"><i class="fas fa-bars"></i></button>
 
-  <!-- Navbar -->
+  <button id="darkModeToggle" class="sticky-btn dark-mode-btn" title="Toggle Light/Dark Mode">
+    </button>
+  <button id="hamburger" class="sticky-btn hamburger-btn" title="Open Menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
   <nav class="navbar">
-    <ul id="menuToggle">
+    <ul id="menuToggle" class="nav-links">
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#project">Project</a></li>
       <li><a href="#skill">Skill</a></li>
@@ -26,70 +28,105 @@
   </nav>
 
   <div class="container">
-    <!-- Hero -->
     <header class="hero" data-aos="fade-down">
       <h1>Halo, Saya Chandra Prasetya Raga Lawa</h1>
-      <img src="images/pass-foto.jpg" alt="Foto Chandra" class="foto-profil" />
+      <p>Mahasiswa Computer Science yang fokus di Web Development.</p>
+      <img src="Images/pass-foto.jpg" alt="Foto Profil Chandra Prasetya Raga Lawa" class="profile-photo">
     </header>
 
-    <!-- Tentang -->
-    <section id="tentang" data-aos="fade-up">
+    <section id="tentang" class="about-section" data-aos="fade-up">
       <h2>Tentang Saya</h2>
-      <p>Saya mahasiswa Computer Science yang fokus di web development. Konsistensi adalah kunci kemajuan.</p>
+      <p>Saya adalah seorang mahasiswa ilmu komputer yang memiliki minat mendalam dalam pengembangan web. Saya percaya bahwa konsistensi dan pembelajaran berkelanjutan adalah kunci untuk menguasai teknologi baru dan menciptakan solusi digital yang inovatif.</p>
     </section>
 
-    <!-- Project -->
-    <section id="project" data-aos="fade-up">
+    <section id="project" class="projects-section" data-aos="fade-up">
       <h2>Project Saya</h2>
-      <div class="projects">
-        <div class="card"><h3>🎬 AI Rekomendasi Film</h3><p>Merekomendasikan film sesuai preferensi user dengan ML.</p></div>
-        <div class="card"><h3>🛒 Marketplace COD</h3><p>E-commerce dengan fitur COD dan dashboard admin.</p></div>
-        <div class="card"><h3>📝 To-Do List</h3><p>Task sederhana berbasis local storage (add, edit, delete).</p></div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3><i class="fas fa-film project-icon"></i> AI Rekomendasi Film</h3>
+          <p>Sistem rekomendasi film yang dipersonalisasi berdasarkan preferensi pengguna menggunakan Machine Learning.</p>
+        </article>
+        <article class="project-card">
+          <h3><i class="fas fa-store project-icon"></i> Marketplace COD</h3>
+          <p>Platform e-commerce dengan fitur pembayaran Cash-on-Delivery (COD) dan dashboard admin untuk pengelolaan pesanan.</p>
+        </article>
+        <article class="project-card">
+          <h3><i class="fas fa-list-check project-icon"></i> To-Do List App</h3>
+          <p>Aplikasi daftar tugas sederhana berbasis Local Storage dengan fungsionalitas tambah, edit, dan hapus tugas.</p>
+        </article>
       </div>
     </section>
 
-    <!-- Skill -->
-    <section id="skill" data-aos="zoom-in">
+    <section id="skill" class="skills-section" data-aos="zoom-in">
       <h2>Skill</h2>
-      <div class="skills">
-        <div class="skill"><span>HTML</span><div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div></div>
-        <div class="skill"><span>CSS</span><div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div></div>
-        <div class="skill"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div></div>
-        <div class="skill"><span>Python</span><div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div></div>
+      <div class="skills-list">
+        <div class="skill-item">
+          <span>HTML</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>CSS</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>Python</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 65%;"></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Kontak -->
-    <section id="kontak" data-aos="fade-up">
+    <section id="kontak" class="contact-section" data-aos="fade-up">
       <h2>Kontak</h2>
       <form id="contactForm" class="contact-form">
-        <input type="text" name="name" placeholder="Nama Anda" required />
-        <input type="email" name="email" placeholder="Email Anda" required />
-        <textarea name="message" rows="4" placeholder="Pesan Anda" required></textarea>
-        <button type="submit">Kirim</button>
+        <input type="text" name="name" placeholder="Nama Anda" aria-label="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" aria-label="Email Anda" required>
+        <textarea name="message" rows="5" placeholder="Pesan Anda" aria-label="Pesan Anda" required></textarea>
+        <button type="submit" class="btn primary-btn">Kirim Pesan</button>
       </form>
-      <a href="assets/CV-Chandra.pdf" class="btn-download" download>📄 Download CV</a>
-      <ul class="contact-list">
+      <a href="assets/CV-Chandra.pdf" class="btn download-btn" download>
+        <i class="fas fa-download"></i> Download CV
+      </a>
+
+      <ul class="contact-info-list">
         <li><i class="fas fa-envelope"></i> <a href="mailto:ragalawachandra@gmail.com">ragalawachandra@gmail.com</a></li>
-        <li><i class="fab fa-github"></i> <a href="https://github.com/ChandraRL" target="_blank">github.com/ChandraRL</a></li>
-        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/chandra-prasetya-raga-lawa-844bb636b/" target="_blank">LinkedIn</a></li>
-        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282145902680" target="_blank">+62 821-4590-2680</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/ChandraRL" target="_blank" rel="noopener noreferrer">github.com/ChandraRL</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/chandra-prasetya-raga-lawa-844bb636b/" target="_blank" rel="noopener noreferrer">LinkedIn Profil</a></li>
+        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282145902680" target="_blank" rel="noopener noreferrer">+62 821-4590-2680</a></li>
       </ul>
     </section>
 
-    <footer>
-      <p style="text-align: center;">&copy; 2025 Chandra Raga Lawa. All rights reserved.</p>
+    <footer class="site-footer">
+      <p>&copy; 2025 Chandra Prasetya Raga Lawa. All rights reserved.</p>
     </footer>
   </div>
 
-  <button id="scrollTopBtn" title="Scroll ke atas"><i class="fas fa-arrow-up"></i></button>
+  <button id="scrollTopBtn" class="sticky-btn scroll-top-btn" title="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
   <script>
-    emailjs.init("wTNYl3TJRpPNwz5hY");
-    AOS.init({ duration: 800, once: true });
+    // Initialize EmailJS
+    emailjs.init("wTNYl3TJRpPNwz5hY"); // Ganti dengan User ID EmailJS Anda
+    // Initialize AOS
+    AOS.init({
+      duration: 800, // Durasi animasi (ms)
+      once: true     // Animasi hanya berjalan sekali saat scrolling ke elemen
+    });
   </script>
 </body>
 </html>
