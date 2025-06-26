@@ -5,14 +5,14 @@ toggle.addEventListener('click', () => {
   toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
 });
 
-// Hamburger Menu
+// Toggle Hamburger Menu
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menuToggle');
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-// Scroll to Top Button
+// Scroll to Top
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 window.addEventListener('scroll', () => {
   scrollTopBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
@@ -21,16 +21,17 @@ scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// EmailJS Submit
+// EmailJS
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', function (e) {
+contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  emailjs.sendForm('service_chandragmail', 'template_uafuvh9', this)
+  emailjs.sendForm('service_chandragmail', 'template_uafuvh9', contactForm)
     .then(() => {
       alert('Pesan berhasil dikirim!');
       contactForm.reset();
-    }, (error) => {
-      alert('Gagal mengirim pesan, coba lagi nanti.');
+    })
+    .catch((error) => {
+      alert('Gagal mengirim pesan. Coba lagi nanti.');
       console.error('EmailJS Error:', error);
     });
 });

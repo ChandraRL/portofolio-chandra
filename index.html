@@ -3,43 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PORTOFOLIO CHANDRA</title>
-  <meta name="description" content="Portofolio resmi Chandra Raga Lawa - Mahasiswa Computer Science dan pengembang web." />
-  <meta name="keywords" content="portofolio, Chandra, Web Developer, Computer Science" />
-  <meta name="author" content="Chandra Raga Lawa" />
-  <meta property="og:title" content="Portofolio Chandra" />
-  <meta property="og:description" content="Mahasiswa Computer Science dan Web Developer" />
-  <meta property="og:image" content="Images/pass-foto.jpg" />
-  <meta property="og:type" content="website" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
-  <!-- Google Font -->
+  <title>Portofolio Chandra</title>
+  <link rel="icon" href="images/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- AOS (Animate On Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Smooth Scroll -->
-  <style>html { scroll-behavior: smooth; }</style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-  <!-- Loader -->
-  <div id="loader"></div>
+  <!-- Sticky Buttons -->
+  <button id="darkModeToggle" title="Ganti Tema">🌙</button>
+  <button id="hamburger" title="Menu"><i class="fas fa-bars"></i></button>
 
-  <!-- Hamburger Toggle -->
-  <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <!-- NAVBAR -->
+  <!-- Navbar -->
   <nav class="navbar">
     <ul id="menuToggle">
       <li><a href="#tentang">Tentang</a></li>
@@ -50,65 +26,36 @@
   </nav>
 
   <div class="container">
-    <!-- Tombol Dark Mode -->
-    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
-
-    <!-- Header -->
+    <!-- Hero -->
     <header class="hero" data-aos="fade-down">
-      <h1>HALLO, SAYA CHANDRA PRASETYA RAGA LAWA</h1>
-      <img src="Images/pass-foto.jpg" alt="Foto Profil Saya" class="foto-profil" data-aos="zoom-in" />
+      <h1>Halo, Saya Chandra Prasetya Raga Lawa</h1>
+      <img src="images/pass-foto.jpg" alt="Foto Chandra" class="foto-profil" />
     </header>
 
-    <!-- Tentang Saya -->
+    <!-- Tentang -->
     <section id="tentang" data-aos="fade-up">
       <h2>Tentang Saya</h2>
-      <p class="tentang">
-        Saya percaya bahwa kemampuan bisa dibentuk dari konsistensi dan kemauan untuk belajar.
-        Dengan latar belakang Computer Science, saya sedang membangun pondasi yang kuat di bidang software engineering,
-        mulai dari pemahaman dasar hingga penerapan praktik terbaik di dunia nyata.
-        Saya terbiasa mengatur waktu secara mandiri dan terus berusaha menjadi versi terbaik dari diri saya.
-      </p>
+      <p>Saya mahasiswa Computer Science yang fokus di web development. Konsistensi adalah kunci kemajuan.</p>
     </section>
 
-    <!-- Project Saya -->
+    <!-- Project -->
     <section id="project" data-aos="fade-up">
       <h2>Project Saya</h2>
       <div class="projects">
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3>🎬 Website Rekomendasi Film (AI)</h3>
-          <p>Menggunakan algoritma machine learning untuk merekomendasikan film sesuai preferensi pengguna.</p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-          <h3>🛒 Website Market Place COD</h3>
-          <p>Platform jual beli online dengan fitur pembayaran di tempat (COD) dan dashboard admin.</p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
-          <h3>📝 Website TO DO LIST</h3>
-          <p>To-do list simpel dengan fitur tambah, edit, dan hapus tugas harian berbasis lokal storage.</p>
-        </div>
+        <div class="card"><h3>🎬 AI Rekomendasi Film</h3><p>Merekomendasikan film sesuai preferensi user dengan ML.</p></div>
+        <div class="card"><h3>🛒 Marketplace COD</h3><p>E-commerce dengan fitur COD dan dashboard admin.</p></div>
+        <div class="card"><h3>📝 To-Do List</h3><p>Task sederhana berbasis local storage (add, edit, delete).</p></div>
       </div>
     </section>
 
-    <!-- Skill Section -->
+    <!-- Skill -->
     <section id="skill" data-aos="zoom-in">
-      <h2>Skill Saya</h2>
+      <h2>Skill</h2>
       <div class="skills">
-        <div class="skill">
-          <span>HTML</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
-        </div>
-        <div class="skill">
-          <span>CSS</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
-        </div>
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Python</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
-        </div>
+        <div class="skill"><span>HTML</span><div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div></div>
+        <div class="skill"><span>CSS</span><div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div></div>
+        <div class="skill"><span>Python</span><div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div></div>
       </div>
     </section>
 
@@ -118,39 +65,31 @@
       <form id="contactForm" class="contact-form">
         <input type="text" name="name" placeholder="Nama Anda" required />
         <input type="email" name="email" placeholder="Email Anda" required />
-        <textarea name="message" placeholder="Pesan Anda" rows="4" required></textarea>
-        <button type="submit">Kirim Pesan</button>
+        <textarea name="message" rows="4" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
       </form>
-      <a href="assets/CV-Chandra.pdf" download class="btn-download">📄 Download CV</a>
+      <a href="assets/CV-Chandra.pdf" class="btn-download" download>📄 Download CV</a>
       <ul class="contact-list">
         <li><i class="fas fa-envelope"></i> <a href="mailto:ragalawachandra@gmail.com">ragalawachandra@gmail.com</a></li>
         <li><i class="fab fa-github"></i> <a href="https://github.com/ChandraRL" target="_blank">github.com/ChandraRL</a></li>
-        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/chandra-prasetya-raga-lawa-844bb636b/" target="_blank">linkedin.com/in/ChandraPrasetyaragaLawa</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/chandra-prasetya-raga-lawa-844bb636b/" target="_blank">LinkedIn</a></li>
         <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282145902680" target="_blank">+62 821-4590-2680</a></li>
       </ul>
     </section>
 
-    <!-- Footer -->
-    <footer data-aos="fade-up">
+    <footer>
       <p style="text-align: center;">&copy; 2025 Chandra Raga Lawa. All rights reserved.</p>
     </footer>
   </div>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" title="Kembali ke atas" aria-label="Scroll to Top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+  <button id="scrollTopBtn" title="Scroll ke atas"><i class="fas fa-arrow-up"></i></button>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
   <script>
-    window.addEventListener("load", () => {
-      document.getElementById("loader").style.display = "none";
-    });
     emailjs.init("wTNYl3TJRpPNwz5hY");
     AOS.init({ duration: 800, once: true });
   </script>
-  <script src="js/main.js"></script>
 </body>
 </html>
