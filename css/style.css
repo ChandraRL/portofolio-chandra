@@ -29,6 +29,10 @@ p {
   margin-bottom: 20px;
 }
 
+strong, b {
+  font-weight: bold;
+}
+
 /* Dark Mode */
 body.dark-mode {
   background: linear-gradient(135deg, #1e1e1e 0%, #333 100%);
@@ -47,6 +51,17 @@ body.dark-mode #darkModeToggle {
   background-color: #444;
   color: #fff;
 }
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode strong,
+body.dark-mode b {
+  color: #fff;
+}
+body.dark-mode p,
+body.dark-mode span {
+  color: #ddd;
+}
 
 /* Navbar */
 .navbar {
@@ -54,6 +69,8 @@ body.dark-mode #darkModeToggle {
   padding: 10px 0;
   text-align: center;
   margin-bottom: 30px;
+  z-index: 1000;
+  position: relative;
 }
 .navbar ul {
   list-style: none;
@@ -61,6 +78,8 @@ body.dark-mode #darkModeToggle {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  position: relative;
+  z-index: 1000;
 }
 .navbar a {
   color: #fff;
@@ -83,13 +102,15 @@ body.dark-mode #darkModeToggle {
   font-size: 24px;
   padding: 10px;
   border-radius: 5px;
-  z-index: 999;
+  z-index: 1100;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 .foto-profil {
   width: 150px;
@@ -116,10 +137,24 @@ body.dark-mode #darkModeToggle {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
+  position: relative;
+  overflow: hidden;
 }
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+/* Fix animasi overlap titil 3 (overflow) */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 0;
 }
 
 @keyframes fadeInUp {
@@ -246,6 +281,7 @@ body.dark-mode #darkModeToggle {
     width: 200px;
     padding: 20px;
     border-radius: 5px;
+    z-index: 1000;
   }
   .navbar ul.active {
     display: flex;
