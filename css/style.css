@@ -103,6 +103,15 @@ body.dark-mode span {
   padding: 10px;
   border-radius: 5px;
   z-index: 1100;
+  cursor: pointer;
+}
+
+/* Ensure hamburger and toggle buttons always on top */
+.hamburger,
+#darkModeToggle,
+#scrollTopBtn {
+  position: fixed;
+  z-index: 1100;
 }
 
 /* Hero Section */
@@ -247,7 +256,6 @@ body.dark-mode span {
 
 /* Scroll to Top */
 #scrollTopBtn {
-  position: fixed;
   bottom: 30px;
   right: 30px;
   background: #0066cc;
@@ -259,7 +267,6 @@ body.dark-mode span {
   font-size: 18px;
   cursor: pointer;
   display: none;
-  z-index: 999;
 }
 
 /* Responsive */
@@ -270,18 +277,21 @@ body.dark-mode span {
   }
   .hamburger {
     display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
   .navbar ul {
     display: none;
     flex-direction: column;
     background-color: #0066cc;
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: 20px;
     width: 200px;
     padding: 20px;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 1099;
   }
   .navbar ul.active {
     display: flex;
